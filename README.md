@@ -1,4 +1,9 @@
-Community localization of the game "*Casualties: Unknown*" by [Orsoniks](https://github.com/Orsoniks)
+# Casualties: Unknown — Community Locales
+
+> [!NOTE]
+> **Fork notice:** this repository is a fork of [Orsoniks/scavgame-locale](https://github.com/Orsoniks/scavgame-locale). The upstream repository is the canonical place for current locale files, contribution discussions, and pull requests. This fork preserves a personal development snapshot of the community translations.
+
+Community localization of the game "*Casualties: Unknown*" by [Orsoniks](https://github.com/Orsoniks).
 
 ## Installing
 
