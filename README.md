@@ -8,6 +8,7 @@ Community localization of the game "*Casualties: Unknown*" by [Orsoniks](https:/
 ## Installing
 
 To install a locale:
+
 1. Download the JSON file for your locale from this repository.
 2. Go to *Casualties: Unknown*'s install path.
    - For Steam: Library -> Right click on *Casualties: Unknown* -> Manage -> Browse local files
@@ -77,7 +78,9 @@ The [translation notes](./TranslationNotes.md) may provide additional context an
 | [繁體中文 (台灣)](/zh-TW.json) | v5.1 | [黑藓Black_Moss](https://github.com/Black-Moss), [A9800X3D](https://github.com/A9800X3D), [吃吃/Rar](https://github.com/rar0205) |
 
 ## Maintainers
+
 * [Azurian](https://github.com/clemtomera), [Marioalexsan](https://github.com/Marioalexsan)
 
 ## Owner
+
 * [Orsoniks](https://github.com/Orsoniks)
