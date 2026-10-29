@@ -8,12 +8,42 @@ Community localization of the game "*Casualties: Unknown*" by [Orsoniks](https:/
 ## Installing
 
 To install a locale:
+
 1. Download the JSON file for your locale from this repository.
 2. Go to *Casualties: Unknown*'s install path.
    - For Steam: Library -> Right click on *Casualties: Unknown* -> Manage -> Browse local files
 3. Place the JSON file under the `CasualtiesUnknown_Data/Lang` folder, next to `EN.json`.
 
 If done correctly, your new locale should appear as an option on the main menu, in the top right corner.
+
+## Repository layout and validation
+
+This repository contains translation data, not the game or a runnable application.
+There are no dependencies to install or build commands.
+
+- [EN.json](EN.json) is the English reference; locale filenames are case-sensitive.
+- The other root-level `*.json` files contain community translations.
+- [TranslationNotes.md](TranslationNotes.md) explains context, placeholders, and special fields.
+
+Before submitting an edited locale, check its JSON syntax with Python 3, replacing
+`EN.json` below with the file you edited:
+
+```bash
+python3 -m json.tool EN.json > /dev/null
+```
+
+This checks syntax only. Compare keys and placeholders with `EN.json`, retain the
+required non-text fields, and check the translation in the game. The locale states
+in the table below describe this snapshot, not compatibility with every game update.
+
+The current `pl-PL.json` snapshot contains trailing commas and fails strict JSON
+validation. Review its syntax before using or extending it; a locale's presence in
+the table does not mean it passes validation.
+
+If a locale does not appear in the game, check that you downloaded the JSON file
+itself rather than a GitHub HTML page, placed it next to the game's `EN.json`, and
+kept the `.json` extension. Then check syntax and compare it with the reference
+for your game version.
 
 ## Contributing
 
@@ -48,7 +78,9 @@ The [translation notes](./TranslationNotes.md) may provide additional context an
 | [繁體中文 (台灣)](/zh-TW.json) | v5.1 | [黑藓Black_Moss](https://github.com/Black-Moss), [A9800X3D](https://github.com/A9800X3D), [吃吃/Rar](https://github.com/rar0205) |
 
 ## Maintainers
+
 * [Azurian](https://github.com/clemtomera), [Marioalexsan](https://github.com/Marioalexsan)
 
 ## Owner
+
 * [Orsoniks](https://github.com/Orsoniks)
