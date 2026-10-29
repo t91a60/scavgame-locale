@@ -15,6 +15,35 @@ To install a locale:
 
 If done correctly, your new locale should appear as an option on the main menu, in the top right corner.
 
+## Repository layout and validation
+
+This repository contains translation data, not the game or a runnable application.
+There are no dependencies to install or build commands.
+
+- [EN.json](EN.json) is the English reference; locale filenames are case-sensitive.
+- The other root-level `*.json` files contain community translations.
+- [TranslationNotes.md](TranslationNotes.md) explains context, placeholders, and special fields.
+
+Before submitting an edited locale, check its JSON syntax with Python 3, replacing
+`EN.json` below with the file you edited:
+
+```bash
+python3 -m json.tool EN.json > /dev/null
+```
+
+This checks syntax only. Compare keys and placeholders with `EN.json`, retain the
+required non-text fields, and check the translation in the game. The locale states
+in the table below describe this snapshot, not compatibility with every game update.
+
+The current `pl-PL.json` snapshot contains trailing commas and fails strict JSON
+validation. Review its syntax before using or extending it; a locale's presence in
+the table does not mean it passes validation.
+
+If a locale does not appear in the game, check that you downloaded the JSON file
+itself rather than a GitHub HTML page, placed it next to the game's `EN.json`, and
+kept the `.json` extension. Then check syntax and compare it with the reference
+for your game version.
+
 ## Contributing
 
 Please read the [contribution guidelines](/.github/CONTRIBUTING.md) for ways in which you can contribute to existing or new localizations.
